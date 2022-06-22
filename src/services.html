@@ -15,57 +15,83 @@
 
     <!-- Header -->
 
-    <header class="l-header-section">
+    <header class="header-section">
 
       <div class="head">
 
-        <a href="index.html"><img class="logo-img" src="img/logo.svg" alt="logo"></a>
+        <div class="logo">
+          <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.svg" alt="logo"></a>
+        </div>
 
-        <div class="contacts-nav">
-          <div class="contacts">
+        <div class="contacts">
 
-            <ul class="langswitcher bullet">
-              <li class="l-switch hover"><a href="#">Ук</a></li>
-              <li class="l-switch hover"><a href="#">Ру</a></li>
-              <li class="l-switch active"><a href="#">En</a></li>
-            </ul>
+          <ul class="langswitcher bullet">
+            <li class="l-switch hover"><a href="#">Ук</a></li>
+            <li class="l-switch hover"><a href="#">Ру</a></li>
+            <li class="l-switch active"><a href="#">En</a></li>
+          </ul>
 
-            <ul class="head_address">
+          <ul class="head_address">
 
-              <li class="bullet">Kyiv, Mechnikova str, 14/1</li>
+            <li class="street bullet">Kyiv, Mechnikova str, 14/1</li>
 
-              <li class="bullet"><a class="mobilephone" href="#">0800 211 927</a></li>
+            <li class="bullet"><a class="mobilephone" href="#">0800 211 927</a></li>
 
-              <li><svg class="fb-icon_red" width="24" height="24" viewBox="0 0 39 38" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_41045_434)">
-                    <path
-                      d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
-                      fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_41045_434">
-                      <rect width="38" height="38" fill="white" transform="translate(0.5)" />
-                    </clipPath>
-                  </defs>
-                </svg></li>
+            <li class="facebook"><svg class="fb-icon_red" width="24" height="24" viewBox="0 0 39 38" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_41045_434)">
+                  <path
+                    d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_41045_434">
+                    <rect width="38" height="38" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </li>
 
-            </ul>
+          </ul>
 
-          </div>
+        </div>
 
-          <div class="nav">
+        <div class="nav">
 
-            <ul class="nav__list">
-              <li><a href="#">about us</a></li>
-              <li class="active"><a href="#">services</a></li>
-              <li><a href="#">team</a></li>
-              <li><a href="#">publications</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
+          <ul class="nav__list">
+            <li><a href="#">about us</a></li>
+            <li><a class="link_active" href="#">services</a></li>
+            <li><a href="#">team</a></li>
+            <li><a href="#">publications</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+
+        </div>
+
+        <div class="drop-menu">
+
+          <input type="checkbox" id="burger">
+          <label for="burger"></label>
+
+          <div class="burger-menu">
+
+            <div class="menu-wrapper">
+
+              <label class="close-btn" for="burger"></label>
+
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a class="link_active" href="#">services</a></li>
+                <li><a href="#">team</a></li>
+                <li><a href="#">publications</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+
+            </div>
 
           </div>
         </div>
+
       </div>
 
     </header>
@@ -220,7 +246,7 @@
 
           <li>
 
-            <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="fb-footer" width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_41045_434)">
                 <path
                   d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"

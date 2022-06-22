@@ -3,7 +3,6 @@
   .slider {
     list-style: none;
     margin: 0;
-    padding: 0;
     text-align: right;
 
     li {
@@ -53,6 +52,8 @@
   }
 
   .slider {
+    padding: 0;
+    padding-bottom: 30px;
     display: flex;
     flex-flow: row nowrap;
     gap: 30px;
@@ -89,6 +90,7 @@
 
     .slider {
       min-width: calc(100% + 60px);
+      padding-bottom: 60px;
     }
 
     li {
@@ -98,6 +100,8 @@
   }
 
   .info {
+    padding-top: 60px;
+
     h2 {
       font-size: 30px;
       line-height: 37px;
@@ -114,6 +118,7 @@
       min-width: 0;
       flex-direction: column;
       justify-content: center;
+      padding: 0;
       padding-right: 60px;
       border-right: 4px solid rgba(255, 255, 255, 0.3);
     }
