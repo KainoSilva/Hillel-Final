@@ -1,0 +1,136 @@
+.experience {
+
+  .slider {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+
+    li {
+      color: #B3B3BA;
+    }
+
+    li:hover {
+      color: $accent;
+      cursor: pointer;
+    }
+
+    li:first-child {
+      background: $red_revers;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 860px;
+
+    h2 {
+      color: #ffffff;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 19px;
+      line-height: 30px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .experience {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    padding: 0 30px;
+  }
+
+  .slider {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+    min-width: calc(100% + 30px);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    li {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .info {
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .experience {
+    padding: 0 60px;
+
+    .slider {
+      min-width: calc(100% + 60px);
+    }
+
+    li {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+
+  .info {
+    h2 {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .experience {
+    flex-direction: row;
+    justify-content: center;
+
+    .slider {
+      min-width: 0;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 60px;
+      border-right: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .info {
+      padding: 0;
+      padding-left: 60px;
+      border: none;
+      max-width: 550px;
+    }
+  }
+}
+
+@media screen and (min-width: 1326px) {
+  .experience {
+    .info {
+      max-width: 100%;
+    }
+  }
+}

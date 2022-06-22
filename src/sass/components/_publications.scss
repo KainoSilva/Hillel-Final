@@ -5,25 +5,29 @@
     display: inline-block;
     margin-bottom: 30px;
 
-    a {
+    .link-public {
+      display: flex;
       font-size: 14px;
       line-height: 17px;
       letter-spacing: 1px;
+      text-decoration: none;
       text-transform: uppercase;
+      align-items: center;
       color: $normal;
     }
 
-    section {
-      margin-bottom: 10px;
+    .link-public::after {
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
+      margin-left: 5.5px;
+      line-height: 0px;
     }
 
-    h3 {
-      background: $grad_red-text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin: 0;
-      padding: 0;
+    .link-public:hover {
+      color: $accent;
+    }
+
+    .link-public:hover::after {
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
     }
   }
 }
@@ -80,16 +84,20 @@
 }
 
 
-
-
 @media screen and (min-width: 350px) {
   .publications {
     padding: 0 30px;
     padding-top: 30px;
 
     h3 {
+      margin: 0;
+      padding: 0;
       font-size: 30px;
       line-height: 37px;
+      background: $grad_red-text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
   }
 }

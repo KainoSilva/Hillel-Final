@@ -1,0 +1,27 @@
+@import "normalize.css";
+@import "utils/_variables";
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+// Header
+
+@import "pages/s-header";
+
+// Burger menu
+
+@import "components/burger";
+
+// Header Cards
+
+@import "components/cards";
+
+// Customers
+
+@import "pages/s-customers";
+
+// Footer
+
+@import "pages/s-footer";
