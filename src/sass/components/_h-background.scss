@@ -8,12 +8,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     font-size: 38px;
     line-height: 46px;
     z-index: 2;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
 
   &::before {

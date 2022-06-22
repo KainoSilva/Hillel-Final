@@ -9,6 +9,7 @@
 
   .link-services {
     display: flex;
+    width: 94px;
     text-decoration: none;
     color: $normal;
     letter-spacing: 1px;
@@ -16,6 +17,9 @@
     align-items: center;
     font-size: 14px;
     line-height: 17px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 
     &::after {
       content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
@@ -40,6 +44,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
 
   .card {
@@ -55,6 +62,9 @@
       line-height: 27px;
       margin: 0;
       margin-bottom: 15px;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
     }
 
     &_description {
@@ -62,6 +72,9 @@
       font-size: 16px;
       line-height: 26px;
       margin: 0;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
     }
   }
 }

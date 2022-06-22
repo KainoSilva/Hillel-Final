@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "utils/_variables";
+@import "utils/fonts";
 
 
 *, *::after, *::before {
@@ -9,6 +10,10 @@
 // Header
 
 @import "components/header";
+
+// H-Background
+
+@import "components/h-background";
 
 // Burger menu
 
@@ -37,7 +42,3 @@
 // Footer
 
 @import "components/footer";
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-@import "components/h-background";

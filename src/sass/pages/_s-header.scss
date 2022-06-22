@@ -55,15 +55,23 @@
   justify-content: right;
 
   .l-switch {
+    text-decoration: none;
+    color: #ffffff;
     font-size: 12px;
     line-height: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
 
-  a {
+  .mobilephone {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
     line-height: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
 
   .fb-icon_red:hover path {
@@ -91,11 +99,6 @@
 
   li {
     padding: 5px 7px;
-
-    a {
-      text-decoration: none;
-      color: #ffffff;
-    }
   }
 }
 
@@ -110,12 +113,9 @@
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-  }
 
-  .mobilephone {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -136,6 +136,9 @@
       font-size: 16px;
       line-height: 20px;
       width: 100%;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
     }
 
     a:hover {
@@ -219,7 +222,7 @@
     }
 
     .link_active {
-      color: $accent; 
+      color: $accent;
     }
 
     .drop-menu {

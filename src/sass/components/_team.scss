@@ -25,6 +25,9 @@
       margin: 0;
       padding: 0;
       overflow: h;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
     }
 
     .info {
@@ -33,8 +36,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       margin-bottom: 30px;
-      font-weight: 700;
       border: 0;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
     }
 
     h4 {
@@ -44,6 +49,9 @@
       text-transform: capitalize;
       margin: 0;
       padding: 0;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
     }
 
     .info_down {
@@ -53,9 +61,19 @@
     }
   }
 
+  // .team-slider {
+
+    
+  // }
+
   .info_link {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
+    width: 94px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 
     &::after {
       content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
@@ -77,10 +95,16 @@
   .team-slider {
     padding: 30px;
     padding-top: 50px;
+
+    .swiper {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .team {
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .img_wrapper {

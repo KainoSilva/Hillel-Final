@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/services.min.css">
   <title>Document</title>
+  <link rel="stylesheet" href="css/services.min.css">
 </head>
 
 <body>
@@ -20,15 +20,28 @@
       <div class="head">
 
         <div class="logo">
-          <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.svg" alt="logo"></a>
+
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="logo-link" href="../index.html">
+                <img class="logo-img" src="img/logo.svg" alt="logo">
+              </a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__text">
+                services
+              </span>
+            </li>
+          </ul>
+
         </div>
 
         <div class="contacts">
 
           <ul class="langswitcher bullet">
-            <li class="l-switch hover"><a href="#">Ук</a></li>
-            <li class="l-switch hover"><a href="#">Ру</a></li>
-            <li class="l-switch active"><a href="#">En</a></li>
+            <li class="hover"><a class="l-switch" href="#">Ук</a></li>
+            <li class="hover"><a class="l-switch" href="#">Ру</a></li>
+            <li class="active"><a class="l-switch" href="#">En</a></li>
           </ul>
 
           <ul class="head_address">
@@ -246,7 +259,8 @@
 
           <li>
 
-            <svg class="fb-footer" width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="fb-footer" width="39" height="38" viewBox="0 0 39 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_41045_434)">
                 <path
                   d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"

@@ -1,5 +1,6 @@
 @import "normalize.css";
-@import "utils/_variables";
+@import "utils/variables";
+@import "utils/fonts";
 
 
 *, *::after, *::before {
@@ -13,6 +14,10 @@
 // Burger menu
 
 @import "utils/burger";
+
+// Breadcrumb
+
+@import "utils/breadcrumb";
 
 // Header Cards
 
