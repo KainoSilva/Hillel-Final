@@ -72,15 +72,24 @@
     padding: 30px;
 
     h4 {
-      font-size: 16px;
-      line-height: 20px;
-      color: $normal;
       margin: 0;
       padding: 0;
       margin-bottom: 15px;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 20px;
+      color: $normal;
+      text-decoration: none;
+      text-decoration: none;
 
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
+    }
+
+    a:hover {
+      color: $accent;
     }
 
     p {

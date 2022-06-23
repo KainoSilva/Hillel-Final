@@ -50,6 +50,8 @@
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
 
     img {
       width: 92px;
@@ -60,11 +62,19 @@
       color: $normal;
       font-size: 22px;
       line-height: 27px;
-      margin: 0;
-      margin-bottom: 15px;
+      text-decoration: none;
 
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
+    }
+
+    &_title:hover {
+      color: $accent;
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: 15px;
     }
 
     &_description {

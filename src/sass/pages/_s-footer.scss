@@ -67,10 +67,6 @@ footer {
     display: flex;
     flex-direction: row;
 
-    .fb-footer {
-      cursor: pointer;
-    }
-
     .fb-footer:hover path {
       fill: $accent;
     }
