@@ -51,7 +51,6 @@
 
 .contacts {
   display: flex;
-  align-items: center;
   justify-content: right;
 
   .l-switch {
@@ -109,6 +108,7 @@
   padding: 0;
 
   li {
+    align-items: center;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
@@ -251,22 +251,18 @@
       justify-content: start;
     }
 
-    .street {
-      display: block;
+    .bullet {
+      display: flex;
     }
 
-    .facebook {
-      display: block;
-    }
-
-    .bullet::after {
-      content: "•";
-      cursor: default;
+    .bullet::before {
+      content: "";
+      display: inline-block;
       width: 6px;
       height: 6px;
+      background-color: #E6E6F0;
       margin: 0 6px;
-      margin-top: 5px;
-      color: #ffffff;
+      border-radius: 50%;
     }
 
     .logo {

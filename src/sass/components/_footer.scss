@@ -21,13 +21,15 @@ footer {
 
 .block-1 {
   display: flex;
-  align-items: center;
   margin-bottom: 21px;
 
   .address {
     display: flex;
-    flex-direction: row;
 
+    li {
+      display: flex;
+      align-items: center;
+    }
 
     .street {
       font-size: 16px;
@@ -63,13 +65,16 @@ footer {
 
 .block-2 {
   display: flex;
-  align-items: center;
   grid-row-start: 3;
   grid-row-end: 3;
 
   .contacts {
     display: flex;
-    flex-direction: row;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
 
     .fb-footer:hover path {
       fill: $accent;
@@ -165,16 +170,19 @@ footer {
     }
 
     .address {
+      // align-items: center;
       flex-direction: row;
-      gap: 0;
+      gap: 10px;
     }
 
     .item::after {
-      content: "•";
+      content: "";
+      display: inline-block;
       width: 6px;
       height: 6px;
-      margin: 0 10px;
-      color: #B3B3BA;
+      background-color: #B3B3BA;
+      border-radius: 50%;
+      margin-left: 10px;
     }
 
     .block-2 {
@@ -182,16 +190,19 @@ footer {
     }
 
     .contacts {
+      // align-items: center;
       flex-direction: row;
-      gap: 0;
+      gap: 10px;
     }
 
     .dot::before {
-      content: "•";
+      content: "";
+      display: inline-block;
       width: 6px;
       height: 6px;
-      margin: 0 10px;
-      color: #B3B3BA;
+      background-color: #B3B3BA;
+      border-radius: 50%;
+      margin-right: 10px;
     }
 
     .block-3 {
@@ -211,6 +222,10 @@ footer {
       grid-row-start: 1;
       grid-column-start: 2;
       justify-content: right;
+    }
+
+    .phone {
+      width: 120px;
     }
   }
 }
