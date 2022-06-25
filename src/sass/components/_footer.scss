@@ -174,16 +174,6 @@ footer {
       gap: 10px;
     }
 
-    .item::after {
-      content: "";
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      background-color: #B3B3BA;
-      border-radius: 50%;
-      margin-left: 10px;
-    }
-
     .block-2 {
       justify-content: left;
     }
